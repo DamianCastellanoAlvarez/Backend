@@ -44,13 +44,25 @@ class ProductManager {
 
 const productManager = new ProductManager();
 
-productManager.addProduct("Camisa", "Una camisa bonita", 29.99, "camisa.jpg", "CM001", 10);
-productManager.addProduct("Pantalón", "Un pantalón elegante", 39.99, "pantalon.jpg", "PT001", 5);
+productManager.addProduct("Yerba Amanecer", "DIGESTIVO - ANALGESICO - ANSIOLÍTICO", 500, "https://i.imgur.com/mnppYza.jpg", "1", 10);
+productManager.addProduct("Coco Mate", "DIGESTIVO - ANALGESICO - ANSIOLÍTICO", 500, "https://i.imgur.com/zLLXfBK.jpg", "2", 15);
+productManager.addProduct("Yerba Calma", "DIGESTIVO - ANALGESICO - ANSIOLÍTICO", 500, "https://i.imgur.com/eLBvw8o.jpg", "3", 20);
+productManager.addProduct("Stevia", "Antidiabética - Antioxidante - Antitumoral", 350, "https://i.imgur.com/y34PFWv.jpg", "4", 12);
+productManager.addProduct("Azucar Mascabo", "Antidiabética - Antioxidante - Antitumoral", 350, "https://i.imgur.com/8jzif5w.jpg", "5", 18);
+productManager.addProduct("Stevia en Frasco", "Antidiabética - Antioxidante - Antitumoral", 350, "https://i.imgur.com/N6aWb1o.jpg", "6", 23);
+productManager.addProduct("Te Rojo", "Te verde - Manzanilla - Flor de Calendula", 650, "https://i.imgur.com/YgndkGW.jpg", "7", 8);
+productManager.addProduct("Te Verde", "Te verde - Manzanilla - Flor de Calendula", 650, "https://i.imgur.com/4A4286c.jpg", "8", 14);
+productManager.addProduct("Te Negro", "Te verde - Manzanilla - Flor de Calendula", 650, "https://i.imgur.com/i77UaB2.jpg", "9", 25);
 
-const products = productManager.getProducts();
-    console.log("Todos los productos:", products);
 
-const product = productManager.getProductById(1);
+
+//obtener todos los productos
+//const products = productManager.getProducts();
+    //console.log("Todos los productos:", products);
+
+
+  // buscar producto por id con el metodo getProductById
+const product = productManager.getProductById();
     console.log("Producto encontrado:", product);
 
 const productNotFound = productManager.getProductById(99);
